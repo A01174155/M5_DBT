@@ -1,12 +1,16 @@
-version: 2
-
 sources:
-  - name: pos
+  - name: customer
     database: tb_101
-    schema: raw_pos
+    schema: raw_customer
+    tables:
+      - name: customer_loyalty
+
+  - name: pos
+    database: TB_101
+    schema: RAW_POS
     tables:
       - name: country
-      - name: franchaise
+      - name: franchise
       - name: location
       - name: menu
       - name: order_detail
