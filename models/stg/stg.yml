@@ -1,0 +1,7 @@
+models:
+  - name: stg_franchise
+    columns:
+      - name: franchise_id
+        description: "ID of the franchise"
+
+              
