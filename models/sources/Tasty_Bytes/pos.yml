@@ -6,8 +6,8 @@ sources:
       - name: customer_loyalty
 
   - name: pos
-    database: TB_101
-    schema: RAW_POS
+    database: tb_101
+    schema: raw_pos
     tables:
       - name: country
       - name: franchise
