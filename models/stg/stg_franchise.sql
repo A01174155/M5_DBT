@@ -1,6 +1,6 @@
 WITH SRC AS (
     SELECT * FROM {{ source('pos', 'franchise') }}
-)
+),
 
 TRANSFORMED AS (
     SELECT 
