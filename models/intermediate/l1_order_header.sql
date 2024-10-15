@@ -1,6 +1,6 @@
-WITH stg_order_header AS (
-    SELECT * {{ ref ('stg_order_header') }}
+WITH st_order_header AS (
+    SELECT * FROM {{ ref ('stg_order_header') }}
 )
 
 SELECT * 
-FROM stg_order_header
+FROM st_order_header
