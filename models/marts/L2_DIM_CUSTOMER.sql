@@ -1,4 +1,3 @@
-dim_customer AS (
     SELECT 
     CUSTOMER_ID,
     FIRST_NAME,
@@ -9,4 +8,3 @@ dim_customer AS (
     GENDER,
     EMAIL
 FROM {{ ref('l1_customer') }}
-)
