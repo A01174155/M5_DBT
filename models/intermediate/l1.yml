@@ -1,0 +1,49 @@
+models:
+  - name: l1_franchise
+    columns:
+      - name: franchise_id
+        data_tests:
+          - unique
+          - not_null
+  - name: l1_country
+    columns:
+      - name: country_id
+        data_tests:
+          - unique
+          - not_null
+  - name: l1_customer
+    columns:
+      - name: customer_id
+        data_tests:
+          - unique
+          - not_null
+  - name: l1_location
+    columns:
+      - name: location_id
+        data_tests:
+          - unique
+          - not_null
+  - name: l1_menu
+    columns:
+      - name: menu_id
+        data_tests:
+          - unique
+          - not_null
+  - name: l1_order_detail
+    columns:
+      - name: order_detail_id
+        data_tests:
+          - unique
+          - not_null
+  - name: l1_order_header
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+  - name: l1_truck
+    columns:
+      - name: truck_id
+        data_tests:
+          - unique
+          - not_null

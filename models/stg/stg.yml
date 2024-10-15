@@ -32,12 +32,6 @@ models:
     columns:
       - name: truck_id
         description: "ID of truck"
-  - name: l1_franchise
-    columns:
-      - name: franchise_id
-        data_tests:
-          - unique
-          - not_null
               
 
               
