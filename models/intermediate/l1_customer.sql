@@ -1,20 +1,18 @@
 WITH stg_customer AS (
     SELECT * {{ ref ('stg_customer') }}
 ),
-rename_cust AS (
+ajust_cust AS (
     SELECT 
     CUSTOMER_ID,
     FIRST_NAME,
     LAST_NAME,
+    CONCAT(FIRST_NAME, ' ', LAST_NAME) AS FULL_NAME,
     CITY,
     COUNTRY,
-    POSTAL_CODE,
-    PREFERRED_LANGUAGE,
     GENDER,
-    FAVORITE_BRAND,
-    MARITAL_STATUS
+    LOWER (E_MAIL) AS EMAIL
     FROM stg_customer
 )
 
 SELECT * 
-FROM rename_cust
+FROM ajust_cust
