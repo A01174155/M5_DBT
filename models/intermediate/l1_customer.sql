@@ -1,5 +1,5 @@
 WITH stg_customer AS (
-    SELECT * {{ ref ('stg_customer') }}
+    SELECT * FROM {{ ref ('stg_customer') }}
 ),
 
 ajust_cust AS (

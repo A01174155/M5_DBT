@@ -1,6 +1,6 @@
-WITH stg_country AS (
-    SELECT * {{ ref ('stg_country') }}
+WITH st_country AS (
+    SELECT * FROM {{ ref ('stg_country') }}
 )
 
 SELECT * 
-FROM stg_country
+FROM st_country

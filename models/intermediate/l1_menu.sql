@@ -1,5 +1,5 @@
 WITH stg_menu AS (
-    SELECT * {{ ref ('stg_menu') }}
+    SELECT * FROM {{ ref ('stg_menu') }}
 ),
 ajust_menu AS (
     SELECT *,

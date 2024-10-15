@@ -1,10 +1,11 @@
-WITH stg_truck AS (
-    SELECT * {{ ref ('stg_menu') }}
+WITH st_truck AS (
+    SELECT * FROM {{ ref ('stg_truck') }}
 ),
+
 ajust_truck AS (
     SELECT *,
-    MAKE AS CAR_BRAND,
-    FROM stg_truck
+    MAKE AS CAR_BRAND
+    FROM st_truck
 )
 
 SELECT * 

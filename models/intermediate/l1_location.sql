@@ -1,6 +1,6 @@
-WITH stg_location AS (
-    SELECT * {{ ref ('stg_location') }}
+WITH st_location AS (
+    SELECT * FROM {{ ref ('stg_location') }}
 )
 
 SELECT * 
-FROM stg_location
+FROM st_location
