@@ -1,9 +1,10 @@
-WITH stg_franchise AS (
-    SELECT * {{ ref ('stg_franchise') }}
+WITH st_franchise AS (
+    SELECT * FROM {{ ref ('stg_franchise') }}
 ),
+
 deduped AS (
     SELECT * 
-    FROM stg_franchise
+    FROM st_franchise
     QUALIFY ROW_NUMBER () OVER (PARTITION BY FRANCHISE_ID ORDER BY OWNER_CITY) = 1
 )
 
