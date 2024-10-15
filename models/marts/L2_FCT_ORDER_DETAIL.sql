@@ -17,7 +17,6 @@ FROM {{ ref('l1_order_detail') }}
 )
 
 SELECT
-    oh.ORDER_ID,
     oh.TRUCK_ID,
     oh.CUSTOMER_ID,
     dr.ORDER_DETAIL_ID,
