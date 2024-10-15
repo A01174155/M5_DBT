@@ -20,7 +20,6 @@ SELECT
     dt.TRUCK_ID,
     dt.CAR_BRAND,
     dt.MODEL,
-    dt.MENU_TYPE_ID,
     dt.YEAR
 FROM brand_truck bt
 JOIN dim_truck dt
