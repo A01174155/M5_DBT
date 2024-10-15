@@ -1,0 +1,7 @@
+models:
+  - name: L2_DIM_TRUCK
+    columns:
+      - name: truck_id
+        data_tests:
+          - unique
+          - not_null
