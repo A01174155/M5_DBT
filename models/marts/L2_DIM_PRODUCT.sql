@@ -1,7 +1,7 @@
 WITH order_detail AS (
     SELECT 
         PRODUCT_ID
-    FROM {{ ref('l1_order_detail') }}
+    FROM {{ ref('L2_FCT_ORDER_DETAIL') }}
 ),
 
 dim_product AS (
